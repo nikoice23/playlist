@@ -17,10 +17,11 @@
 
 // Songs
 var mySong = {
-	"title":"24K Magic",
-	"artist":"Bruno Mars",
-	"mp3-url":"https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P",
-	"image-url":"https://images-na.ssl-images-amazon.com/images/I/71Gr9aCHQfL._SY355_.jpg",
+	"title":"X (EQUIS)",
+	"artist":"Nicky Jam x J. Balvin ",
+	"mp3-url":"https://open.spotify.com/track/39N9RPD9MRb5WmoLzNzPeA",
+	"image-url":"https://genius.com/Nicky-jam-and-j-balvin-x-equis-lyrics",
+	producer: "Nicky Jam",
 }
 
 var myPlayList = [
@@ -51,7 +52,7 @@ var myPlayList = [
 $( document ).ready(function() {
   
 
-
+$(".songs").append("<p>Song " + mySong.title + "</p>");
 
 });
 
