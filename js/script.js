@@ -18,10 +18,10 @@
 // Songs
 var mySong = {
 	"title":"X (EQUIS)",
-	"artist":"Nicky Jam x J. Balvin ",
-	"mp3-url":"https://open.spotify.com/track/39N9RPD9MRb5WmoLzNzPeA",
-	"image-url":"https://genius.com/Nicky-jam-and-j-balvin-x-equis-lyrics",
-	producer: "Nicky Jam",
+	"artist":" Nicky Jam x J. Balvin ",
+	"mp3Url":" https://open.spotify.com/track/39N9RPD9MRb5WmoLzNzPeA",
+	"imageUrl":" https://genius.com/Nicky-jam-and-j-balvin-x-equis-lyrics",
+	"producer": "Nicky Jam",
 }
 
 var myPlayList = [
@@ -53,7 +53,9 @@ $( document ).ready(function() {
   
 
 $(".songs").append("<p>Song " + mySong.title + "</p>");
-
+$(".songs").append("<p>By:" + mySong.artist + "</p>");
+$(".songs").append("<p>Song" + mySong.mp3Url + "</p>");
+$(".songs").append("<p> imageUrl : <img src=  " + mySong.imageUrl + "</p>");
 });
 
 function displayList(){
